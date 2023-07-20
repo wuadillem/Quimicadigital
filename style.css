@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+
+    
+}
+body{
+    background-color: #b2d8eb;
+    overflow-x: hidden;
+    font-family: "Raleway", sans-serif;
+}
+
+.texto{
+    
+    margin: 50px 10px;
+    border-radius: 20px;
+    margin-top: 15%;
+    color: #4b7281;
+  
+  
+  }
+  .texto b{
+    font-size: 25px;
+    color:#22444d;
+   
+  }
+  .text{
+    margin-bottom: 0px;
+  }
+
+.header{
+    
+      position: fixed;
+      width: 1000pt;
+      height:4% ;   
+      background-color:#2a4246;
+      padding-bottom: 7px;
+  }
+  .header p{
+      margin-top: 5px;
+      margin-left: 7%;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+  }
+.container {
+    position: fixed;
+  }
+  #menu-toggle{
+    display: none;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0%;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #4c858f;
+    transition: left 0.3s;
+  }
+  
+  .menu-open {
+    position: absolute;
+    top:5px;
+    left: 0;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    
+  }
+  
+  .menu-open .hamburger {
+    position: absolute;
+    top: 30%;
+    left:40%;
+    transform: translate(-0%, -60%);
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    transition: 0s;
+  }
+  
+  .menu-open .hamburger:before,
+  .menu-open .hamburger:after {
+    content: "";
+    position: fixed;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+  }
+  
+  .menu-open .hamburger:before {
+    top: -8px;
+  }
+  
+  .menu-open .hamburger:after {
+    top: 8px;
+  }
+  
+  #menu-toggle:checked ~ .menu {
+    left: 0;
+  }
+  
+  #menu-toggle:checked ~ .menu-open .hamburger {
+    background:transparent;
+  }
+  
+  #menu-toggle:checked ~ .menu-open .hamburger:before {
+    transform: rotate(45deg);
+    top: 0;
+ 
+  }
+  
+  #menu-toggle:checked ~ .menu-open .hamburger:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  .menu ul li a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    
+
+  }
+  .h2 {
+    position:relative;
+    width: 100%;
+    height: 150px;
+    background-color: #294045;
+  }
+.h2 h2{
+position: fixed;
+margin-top:30%;
+margin-left: 5%;
+font-size: 25px;
+}
+.menu ul  {
+  list-style: none;
+  padding: 0;
+  font-family: ARIAL;
+}
+.menu ul li a {
+  color: white; /* Definir a cor dos links como branco */
+  text-decoration: none;
+ 
+  }
+  .menu ul li a img {
+    filter: invert(1); /* Inverter a cor das imagens para branco */
+  }
+  .menu ul li a:hover {
+    color: rgb(89, 146, 146); /* Definir a cor dos links ao passar o mouse */
+  }
+  .menu ul li{
+    margin-left: 10px ;
+    margin-bottom: 30px;
+    text-align: lef;
+    border-radius: 20px;
+    padding: 10px 10px;
+ 
+  }
+  .menu ul li:hover{
+    background-color: #325a64;
+    transition: 0.5s;
+  }
